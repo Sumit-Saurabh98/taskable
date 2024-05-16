@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button";
+import Footer from "./_components/footer";
+import Heading from "./_components/heading";
+import Heros from "./_components/heros";
 
 const MarketingPage = () => {
   return (
-    <>
-      <h1 className="text-red-500">Hello next js</h1>
-      <Button className="bg-emerald-500 text-white">Cick me</Button>
-    </>
+    <div className="min-h-full flex flex-col dark:bg-[#1F1F1F]">
+      <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1 px-6 pb-10">
+        <Heading />
+        <Heros/>
+      </div>
+      <Footer/>
+    </div>
   );
 }
 
